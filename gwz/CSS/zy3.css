@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+.hezi{
+	width:100%;
+}
+.tou{
+	background-image:url(../images/zy3-ys-6.jpg);
+	height:320px;
+	text-align:center;
+}
+.tx{
+	position:absolute;
+	top: 15%;
+	width: 100%;	
+}
+.daohan{
+	background-color:;
+	height:34px;
+	padding-left:8%;
+	padding-right:8%;
+	background-color: #000;
+}
+.dh1{
+	display:block;
+	height:34px;
+	float:left;
+	width:20%;
+	text-align: center;
+	
+}
+.dh1:hover{
+	background:#0F0;
+}
+.dha1{
+	font-family:"微软雅黑";
+	color: #FFF;
+	font-size: 24px;
+	text-decoration: none;
+	display:inline-block;
+	width:100%;
+}
+.neiron{
+	background-color:#CCC;
+	height:auto;
+	padding-left:10%;
+	padding-right:10%;
+	padding-top:4%;
+	padding-bottom:2%;
+}
+.nr{
+	height:108px;
+	width:auto;
+	background-color:#FFF;
+	margin-bottom:30px;
+	padding-left:20px;
+	padding-top:10px;
+	overflow:auto;
+}
+.nr1{
+	float:left;
+	height:118px;
+	width:250px;
+	background-image:url(../images/zy3-jx3-1.jpg);
+	box-shadow: -10px -10px 5px #888888;
+}
+.nr2{
+	float:left;
+	height:118px;
+	width:250px;
+	background-image:url(../images/zy3-ys-1.jpg);
+	box-shadow: -10px -10px 5px #888888;
+}
+.nr3{
+	float:left;
+	height:118px;
+	width:250px;
+	background-image:url(../images/zy3-yys-1.jpg);
+	box-shadow: -10px -10px 5px #888888;
+}
+.nr4{
+	float:left;
+	height:118px;
+	width:250px;
+	background-image:url(../images/zy3-lx-1.jpg);
+	box-shadow: -10px -10px 5px #888888;
+}
+.wei{
+	height:60px;
+	width:auto;
+	background:#000;
+	padding-top:20px;
+	text-align:center;
+}
+.wei-p{
+	color:#FFF;
+}
+.zy3-tx{
+	border-radius:50%;
+	border: dashed medium #FFF;
+}
+.tx-bt{
+	font-family:"微软雅黑";
+	font-size:80px;
+	color: #FFF;
+}

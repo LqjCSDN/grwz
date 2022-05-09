@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人主页</title>
+<link href="CSS/index1.css" rel="stylesheet" type="text/css"/>
+<link href="CSS/shezhi.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="container">
+    <div class="nav">
+        <input type="radio" name="radio-set" checked id="nav1">
+        <a class="a1" href="#panel1">首页</a>
+        <input type="radio" name="radio-set" id="nav2">
+        <a class="a1" href="#panel2">大概经历</a>
+        <input type="radio" name="radio-set" id="nav3">
+        <a class="a1" href="#panel3">兴趣爱好</a>
+        <input type="radio" name="radio-set" id="nav4">
+        <a class="a1" href="#panel4">联系方式</a>
+    <div class="scroll">
+        <section class="panel panelColor1" id="panel1">
+       	  <table class="tab1">
+			<tr>
+    			<td valign="bottom"><a href="zy1-wtou.html"><img class="mg1" src="images/1.jpg"/></a></td>
+  			</tr>
+			<tr>
+    			<td valign="middle"><h1 class="h1-1">欢迎来到我的个人网站</h1></td>
+  			</tr>
+			</table>
+		</section>
+        <section class="panel panelColor2" id="panel2">
+		  <table class="tab2">
+ 		 		<tr>
+    				<td height="20%" colspan="2" align="center"><h1 class="h1-2">我的一些个人资料</h1>
+                    <hr align="center" width="100%" size="2" />
+                    </td>
+   				</tr>
+ 		 		<tr align="left">
+    				<td width="20%" align="right"><img src="images/2.jpg" width="154" height="254" /></td>
+    				<td width="80%"><p class="p1">自我介绍......<br />
+                    xxxxxxx<br />
+                    xxxxxxxxx<br />
+                    xxxxxxxxxxxx<br />
+                    xxxxxxxxxxxxxxx</p></td>
+  				</tr>
+  					<tr>
+    				<td height="70%" colspan="2" align="center"> <hr align="center" width="100%" size="2" />
+                    <br />
+                    <a href="zy1-wtou.html" target="_new" class="a2">更多</a>
+                    </td>
+   				</tr>
+		  </table>
+	  </section>
+        <section class="panel panelColor3" id="panel3">
+            <table class="tab2">
+ 		 		<tr>
+    				<td height="20%" colspan="2" align="center"><h1 class="h1-2">我的一些兴趣</h1>
+                    <hr align="center" width="100%" size="2" />
+                    </td>
+   				</tr>
+ 		 		<tr align="left">
+    				<td width="20%" align="center" valign="middle">
+                    	<ul>
+                        <a href="zy3.html" target="_blank">
+                        <li class="li-1"></li>
+                        </a>
+                        <a href="zy1-wtou.html" target="_blank">
+                     	<li class="li-2"></li>
+                        </a>
+                        <a href="zy1-wtou.html" target="_blank">
+                     	<li class="li-3"></li>
+                        </a>
+                        </ul>
+                    </td>
+			  </tr>
+  					<tr>
+    				<td height="70%" colspan="2" align="center"> <hr align="center" width="100%" size="2" />
+                    </td>
+   				</tr>
+		  </table>
+        </section>
+        <section class="panel panelColor4" id="panel4">
+       	  <table class="tab2">
+ 		 		<tr>
+    				<td height="20%" colspan="2" align="center"><h1 class="h1-2">我的联系方式</h1>
+                    <hr align="center" width="100%" size="2" />
+                    </td>
+			  </tr>
+ 		 		<tr align="left">
+    				<td width="40%" align="center" valign="middle">
+                        <p class="p2">QQ:xxxx</p>
+                        <p class="p2">邮箱:xxxxx@qq.com</p>
+                        <p class="p2">手机号:xxxxx</p>
+                    </td>
+	    	</tr>
+  					<tr>
+    				<td height="40%" colspan="2" align="left"> <hr align="center" width="100%" size="2" />
+                       <p class="p3">版权说明：网页全屏滚动效果出处：https://www.csdn.net/?spm=1018.2118.3001.5359<br />
+                       资料来源：百度百科、学习网站、游戏官网。<br />
+                       图片来源：游戏官网、微博、贴吧。（部分由原作者友情赞助，切勿商用乱用。）<br />
+                       </p>
+                    </td>
+			</tr>
+		  </table>
+        </section>
+    </div>
+    </div>
+</div>
+<script>
+    window.onload= function () {
+        var scroll=document.getElementsByClassName("scroll")[0];//ie不兼容，换成id会成功
+        var panel=document.getElementsByClassName("panel");//ie不兼容，换成id会成功
+ 
+        var clientH=window.innerHeight;
+        scroll.style.height=clientH+"px";
+        for(var i=0;i<panel.length;i++){
+            panel[i].style.height=clientH+"px";
+        }
+        /*下面是关于鼠标滚动*/
+        var inputC=document.getElementsByTagName("input");
+        var wheel= function (event) {
+            var delta=0;
+            if(!event)//for ie
+                event=window.event;
+            if(event.wheelDelta){//ie,opera
+                delta=event.wheelDelta/120;
+            }else if(event.detail){
+                delta=-event.detail/3;
+            }
+            if(delta){
+                handle(delta,inputC);
+            }
+            if(event.preventDefault)
+                event.preventDefault();
+            event.returnValue=false;
+        };
+        if(window.addEventListener){
+            window.addEventListener('DOMMouseScroll',wheel,false);
+        }
+        window.onmousewheel=wheel;
+    };
+    function handle(delta,arr) {
+        var num;
+        for(var i=0;i<arr.length;i++){//得到当前checked元素的下标
+            if(arr[i].checked){
+                num=i;
+            }
+        }
+        if(delta>0 && num>0){//向上滚动
+            num--;
+            arr[num].checked=true;
+        }else if(delta<0 && num<4){//向下滚动
+            num++;
+            arr[num].checked=true;
+        }
+    }
+</script>
+</body>
+</html>

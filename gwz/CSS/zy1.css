@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+.hezi{
+	width:1380px;
+	height:auto;
+}
+.daohan{
+	position:fixed;
+	top:0;
+	width:100%;
+	height:42px;
+	background-color:#04b1cc;	
+}
+.nr1{
+	width:100%;
+	height:342px;
+	background-image:url(../images/zy1-bj.jpg);
+}
+.nr1-1{
+	width:1380px;
+	height:50px;
+	position:absolute;
+	background-color:#F1FCFD;
+	top: 292px;
+	
+}
+.tx{
+	position:absolute;
+	top:195px;
+	width:128px;
+	height:128px;
+	background-image:url(../images/1-x.jpg);
+	left:10%;
+	border: solid 5px #FFF;
+}
+.nr2{
+	width:100%;
+	padding-left:10%;
+	padding-right:10%;
+	height:auto;
+	background-color:#ddf1f5;
+}
+.wei{
+	width:100%;
+	height:80px;
+	background-color:#000;
+}
