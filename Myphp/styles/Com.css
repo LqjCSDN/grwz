@@ -1,0 +1,32 @@
+﻿table{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;              /*边缘 */
+	background-color: transparent;    /*透明 */
+	border-collapse: collapse;        /*边框合并 */
+	border: 1px solid #0CF;           /*#ddd #0CF灰色 */
+}
+thead {
+    background-image: url(../images/left-title-bg-h.png); /*背景图像 */
+}
+thead th {
+    height: 25px;
+    color: white;
+    line-height: 25px !important; /*行高 优先权*/
+    font-weight: bold; 
+}
+td, th {
+	border: 1px solid  #0CF;
+	line-height: 20px;
+	padding: 4px 5px;
+	font-size: 14px;
+	text-align: center !important; 
+	
+ }
+
+
+/*common*/
+a:link{text-decoration: none;   /* 指正常的未被访问过的链接*/}
+a:visited{text-decoration: none; /*指已经访问过的链接*/}
+a:hover{text-decoration: none;/*指鼠标在链接*/}
+a:active{text-decoration: none;/* 指正在点的链接*/}
